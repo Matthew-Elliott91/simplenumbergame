@@ -52,5 +52,5 @@ document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 });
 
-console.log('Hello');
+console.log('I added a test branch');
 //High score
