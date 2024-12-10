@@ -65,4 +65,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').focus();
 });
 
+console.log('Hello');
 //High score
