@@ -15,10 +15,8 @@ body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
   background-color: #222;
-  /* background-color: #60b347; */
 }
 
-/* LAYOUT */
 header {
   position: relative;
   height: 35vh;
@@ -45,7 +43,6 @@ main {
   font-size: 2rem;
 }
 
-/* ELEMENTS STYLE */
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -116,4 +113,118 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    background-color: #222;
+    padding: 1rem;
+  }
+
+  header {
+    height: 30vh;
+  }
+
+  main {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .left,
+  .right {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .number {
+    font-size: 4rem;
+    width: 12rem;
+    position: relative;
+    bottom: unset;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
+  }
+
+  .guess {
+    font-size: 4rem;
+    width: 20rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.8rem 2.5rem;
+  }
+
+  .between {
+    font-size: 1.2rem;
+  }
+
+  .message {
+    margin-bottom: 4rem;
+  }
+
+  .label-score {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 2rem;
+  }
+
+  header {
+    height: 33vh;
+  }
+
+  main {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .number {
+    font-size: 5rem;
+    width: 13rem;
+  }
+
+  .guess {
+    font-size: 4.5rem;
+    width: 22rem;
+  }
+
+  .btn {
+    font-size: 1.9rem;
+    padding: 2rem 2.8rem;
+  }
 }
